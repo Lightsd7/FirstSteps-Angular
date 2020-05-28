@@ -1,0 +1,13 @@
+<!-- <img [src]="coracaoVazio" />
+<img [src]="coracaoCheio" />
+<img [src]="coracaoCheio" /> -->
+
+<!-- <div class="row">
+    <div class="col">
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-primary" [disabled]="desabilitado">Teste de Property Binding</button>
+        </div>
+    </div>
+</div> -->
+
+<img *ngFor="let coracao of coracoes" [src]="coracao.exibeCoracao()" />
